@@ -34,10 +34,7 @@ summary1.buildAndPrintReport(matchReader.matches);
 const matchReader = MatchReader.fromCSV('./data/football.csv');
 matchReader.load();
 
-const team = 'Arsenal';
+const team: string = 'Arsenal';
 const summary = Summary.winsAnalysisWithHtmlReport(team);
 summary.buildAndPrintReport(matchReader.matches);
-
-
-
 
